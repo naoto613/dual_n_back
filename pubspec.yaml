@@ -1,0 +1,56 @@
+name: dual_n_back
+description: Dual N Back training.
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_hooks: ^0.18.5+1
+  hooks_riverpod: ^1.0.4
+  shared_preferences: ^2.0.15
+  # google_mobile_ads: ^0.12.2
+  audioplayers: ^0.20.1
+  awesome_dialog: ^3.0.0
+  cupertino_icons: ^1.0.2
+  intl: ^ 0.17.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_native_splash: ^1.1.8+4
+
+  flutter_lints: ^2.0.0
+
+flutter_native_splash:
+  image: "assets/icons/small-logo.png"
+  color: "000033"
+
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/sounds/
+
+  fonts:
+    - family: NotoSerifJP
+      fonts:
+        - asset: assets/fonts/NotoSerifJP-Regular.otf
+        - asset: assets/fonts/NotoSerifJP-Bold.otf
+          weight: 700
+    - family: YuseiMagic
+      fonts:
+        - asset: assets/fonts/YuseiMagic-Regular.ttf
+    - family: SawarabiGothic
+      fonts:
+        - asset: assets/fonts/SawarabiGothic-Regular.ttf
